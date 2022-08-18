@@ -1,14 +1,17 @@
 import styled from "styled-components"
+
 export const Container = styled.div`
     margin-top: 4rem;
+    overflow-x: auto;
 
     table {
         width: 100%;
         border-spacing: 0 0.5rem;
 
-        thead{
+        thead {
             background-color: var(--blue-light);
-            th{
+
+            th {
                 color: white;
             }
         }
@@ -27,11 +30,11 @@ export const Container = styled.div`
             background: var(--shape);
             color: var(--text-body);
             border-radius: 0.25rem;
-            
+
             &:first-child{
-                color: var(--text-title);                
+                color: var(--text-title);
             }
-            
+
             &.deposit {
                 color: var(--green);
             }
@@ -40,5 +43,9 @@ export const Container = styled.div`
                 color: var(--red);
             }
         }
+    }
+
+    @media (min-width: 768px) {
+        overflow-x: none;
     }
 `
