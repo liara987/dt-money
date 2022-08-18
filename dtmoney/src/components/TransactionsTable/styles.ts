@@ -6,6 +6,13 @@ export const Container = styled.div`
         width: 100%;
         border-spacing: 0 0.5rem;
 
+        thead{
+            background-color: var(--blue-light);
+            th{
+                color: white;
+            }
+        }
+
         th {
             color: var(--text-body);
             font-weight: 400;
